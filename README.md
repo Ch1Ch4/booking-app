@@ -1,6 +1,5 @@
 ## Booking API application - Laravel 7
 
-Clone the Repository
 To clone the repository, run the following command in your terminal:
 
 `git clone git@github.com:Ch1Ch4/booking-app.git`
