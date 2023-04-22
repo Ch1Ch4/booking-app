@@ -4,6 +4,14 @@ To clone the repository, run the following command in your terminal:
 
 `git clone git@github.com:Ch1Ch4/booking-app.git`
 
+## Project Requirements
+
+**PHP 7.2**
+
+**PostgreSQL**
+
+Optional **SQLite** for testing purpose
+
 ## Install Laravel
 Before you can run the Laravel project, you need to install the necessary dependencies. To do this, make sure you have Composer installed on your machine, then run the following command in the project directory:
 
@@ -36,7 +44,7 @@ Then, generate a new application key by running the following command:
 
 This will start a development server at http://localhost:8000. You can access the application by navigating to that URL in your web browser.
 
-## List of endpoints
+## List of Endpoints
 
 `php artisan route:list`
 
