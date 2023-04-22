@@ -36,6 +36,10 @@ Then, generate a new application key by running the following command:
 
 This will start a development server at http://localhost:8000. You can access the application by navigating to that URL in your web browser.
 
+## List of endpoints
+
+`php artisan route:list`
+
 ## Run Tests
 To run tests for the Laravel project, make sure you have PHPUnit installed on your machine, then run the following command in the project directory:
 
