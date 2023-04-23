@@ -72,4 +72,29 @@ class BookingTest extends TestCase
 
         $response->assertNotFound();
     }
+
+    public function test_booking_with_non_existing_product_id()
+    {
+        $response = $this
+            ->postJson('api/bookings', [
+                'client_id' => $this->client->id,
+                'product_id' => 7777777
+            ]);
+
+        $response->assertStatus(422);
+        $response->assertJsonValidationErrors(['product_id']);
+    }
+
+    public function test_booking_with_non_existing_client_id()
+    {
+        $response = $this
+            ->postJson('api/bookings', [
+                'client_id' => 7777777,
+                'product_id' => $this->product->id
+            ]);
+
+
+        $response->assertStatus(422);
+        $response->assertJsonValidationErrors(['client_id']);
+    }
 }
