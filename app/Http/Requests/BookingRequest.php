@@ -25,13 +25,15 @@ class BookingRequest extends FormRequest
     public function rules()
     {
         return [
-            'client_id' => 'required',
+            'client_id' => 'required|exists:clients,id',
             'product_id' => [
                 'required',
                 Rule::unique('bookings')->where(function ($query) {
                     return $query->where('client_id', request()->client_id)
                         ->where('product_id', request()->product_id);
-                })],
+                }),
+                'exists:products,id'
+            ],
             'booked_on' => 'sometimes|string',
         ];
     }
