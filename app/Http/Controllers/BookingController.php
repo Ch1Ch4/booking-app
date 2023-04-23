@@ -7,9 +7,6 @@ use App\Http\Resources\BookingResource;
 use App\Models\Booking;
 use App\Models\Client;
 use App\Models\Product;
-use Illuminate\Database\QueryException;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Symfony\Component\HttpFoundation\Response;
 

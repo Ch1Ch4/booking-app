@@ -12,8 +12,6 @@ class Booking extends Model
         'booked_on',
     ];
 
-//    protected $with = ['products'];
-
     public function products()
     {
         return $this->belongsTo(Product::class);
