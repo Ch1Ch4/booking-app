@@ -2,7 +2,7 @@
 
 To clone the repository, run the following command in your terminal:
 
-`git clone git@github.com:Ch1Ch4/booking-app.git`
+`git clone https://github.com/Ch1Ch4/booking-app.git`
 
 ## Project Requirements
 
