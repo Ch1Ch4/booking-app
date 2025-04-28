@@ -19,6 +19,7 @@ class BookingController extends Controller
 
     public function store(BookingRequest $request)
     {
+        //Test
         $validatedData = $request->validated();
 
         $product = Product::where('id', '=', $validatedData['product_id'])->firstOrFail();
